@@ -6,6 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!--FAVICONS-->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#000000">
 	<!--FONTS-->
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<!---->
@@ -13,13 +22,13 @@
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header class="header">
+	<header class="header fixed-item">
 		<div class="page-width">
 			<div class="header__wrapper">
-				<div class="header__left">
-					<img class="header__logo" src="img/logo.png" alt="Logo">
-					<p class="header__title">ATLANTIDA</p>
-				</div>
+				<a class="header__logo" href="/">
+					<img class="header__logo-img" src="img/logo.png" alt="Logo">
+					<p class="header__logo-title">ATLANTIDA</p>
+				</a>
 				<nav class="header__nav">
 					<ul class="header__nav-wrapper">
 						<li class="header__nav-item"><a class="header__nav-link" href="#home">Home</a></li>
@@ -39,7 +48,7 @@
 						<a class="header__social social-item fab fa-twitter" href="https://twitter.com" target="_blank"></a>
 						<a class="header__social social-item fab fa-behance" href="https://behance.net" target="_blank"></a>
 					</div>
-					<button class="header__hamburger" title="Open menu"></button>
+					<button class="header__hamburger hamburger__button" title="Open menu"><i class="fas fa-bars"></i></button>
 				</div>
 			</div>
 		</div>
@@ -64,9 +73,9 @@
 						<div class="footer__left">
 							<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
 							<p class="footer__company">ATLANTIDA STUDIO</p>
-							<p class="footer__address">Steven Bernson, Attorney at Law<br>1556 Broadway, suite 416<br>New York, NY, 10120, USA </p>
+							<p class="footer__address">Steven Bernson, Attorney at Law<br>1556 Broadway, suite 416<br>New York, NY, 10120, USA</p>
 							<a class="footer__email" href="mailto:elegantflyers@gmail.com">E-mail: elegantflyers@gmail.com</a>
-							<a class="footer__tel" href="tel:+84956654972"><br>+84 956 654 972</a>
+							<a class="footer__tel" href="tel:+84956654972">+84 956 654 972</a>
 							<div class="footer__social social">
 								<a class="footer__social-item social-item fab fa-facebook-square" href="https://facebook.com" target="_blank"></a>
 								<a class="footer__social-item social-item fab fa-twitter" href="https://twitter.com" target="_blank"></a>
@@ -91,7 +100,7 @@
 		</div>
 	</footer>
 	<div class="hamburger">
-		<div class="hamburger__menu">
+		<div class="hamburger__wrapper">
 			<ul class="hamburger__nav">
 				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#home">Home</a></li>
 				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#about">About</a></li>
@@ -104,6 +113,6 @@
 			</ul>
 		</div>
 	</div>
-	<script src="script/main.js"></script>
+	<script src="script/script.js"></script>
 </body>
 </html>
